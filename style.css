@@ -38,8 +38,11 @@ body {
 .fact-form {
   background-color: #44403c;
   margin-bottom: 40px;
-  padding: 16px 40px;
-  text-align: center;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 16px;
 }
 
 .main {
@@ -68,6 +71,7 @@ h1 {
   background-color: #44403c;
   margin-bottom: 16px;
   padding: 16px 24px;
+  border-radius: 16px;
 
   display: flex;
   align-items: center;
@@ -167,7 +171,9 @@ ul {
   background-color: #eab308;
 }
 
-.fact-form input {
+.fact-form input,
+.fact-form select {
+  width: 220px;
   background-color: #78716c;
   border: none;
   border-radius: 100px;
@@ -179,4 +185,14 @@ ul {
 
 .fact-form input::placeholder {
   color: #a8a29e;
+}
+
+.fact-form input:first-child {
+  flex-grow: 1;
+}
+
+.fact-form span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 18px;
 }
